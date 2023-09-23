@@ -5,7 +5,7 @@
     "height": "container",
     "projection": {"type": "equalEarth"},
     "data": {
-      "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+      "url": "https://github.com/vedesh1408/FIT3179_S2_23/blob/main/Week%209%20Homework/js/WorldMapWithGraticules.topojson",
       "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
     },
     "transform": [
@@ -13,9 +13,9 @@
         "lookup": "properties.NAME",
         "from": {
           "data": {
-            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
+            "url": "https://github.com/vedesh1408/FIT3179_S2_23/blob/main/Week%209%20Homework/data/2015.csv"
           },
-          "key": "Country",
+          "key": "Country or region",
           "fields": ["Active"]
         }
       },
