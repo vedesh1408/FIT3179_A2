@@ -3,18 +3,12 @@
   "title": "Happiness Index of Countries in 2015",
   "width": 1000,
   "height": 500,
-  "projection": 
-  {
-    "type": "equalEarth"
-  },
-  
-  
+  "projection": {"type": "equalEarth"},
+  "config": {"view": {"stroke": null}},
   "data": {
     "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/main/js/ne_110m.json",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
-  
-
   "layer":
   [
     {
@@ -24,7 +18,6 @@
       ],
 
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
-
       "encoding": {"tooltip": {"field": "note"}}
     },
     {
@@ -32,7 +25,7 @@
         "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/main/js/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
-      "mark": { "type": "geoshape", "fill": "#D4F1F4" }
+      "mark": { "type": "geoshape", "fill": "#cbe5fc" }
     },
     {
       "data": {
