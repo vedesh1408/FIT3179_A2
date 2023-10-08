@@ -1,8 +1,16 @@
-#happiness_map_2015 {
+#happiness_map_2016 {
 	top:100px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
+	height: 500px;
+	width: 1000px;
+}
+#Score_vs_GDP{
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 150px;
 	height: 500px;
 	width: 1000px;
 }
