@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Happiness Index of Countries in 2016",
-  "width": 1000,
-  "height": 500,
+  "width": 500,
+  "height": 400,
   "projection": {"type": "equalEarth"},
   "config": {"view": {"stroke": null}},
   "data": {

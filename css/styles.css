@@ -1,16 +1,40 @@
-#happiness_map_2016 {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	height: 500px;
-	width: 1000px;
+/* Add custom CSS styles for aesthetics */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
-#Score_vs_GDP{
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 150px;
-	height: 500px;
-	width: 1000px;
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
