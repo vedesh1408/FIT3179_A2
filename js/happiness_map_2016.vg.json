@@ -1,72 +1,72 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Happiness Index of Countries in 2015",
-  "width": 1000,
-  "height": 500,
+  "title": "Happiness Index of Countries in 2016",
+  "width": 500,
+  "height": 400,
   "projection": {"type": "equalEarth"},
   "config": {"view": {"stroke": null}},
   "data": {
     "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/main/js/ne_110m.json",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
-  "layer":
-  [
+  "layer": [
     {
-      "transform": 
-      [ 
-        {"calculate": "'Data is not available in ' + datum.properties.NAME", "as": "note"}
+      "transform": [
+        {
+          "calculate": "'Data is not available in ' + datum.properties.NAME",
+          "as": "note"
+        }
       ],
-
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
       "encoding": {"tooltip": {"field": "note"}}
     },
     {
-      "data":{
+      "data": {
         "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/main/js/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
-      "mark": { "type": "geoshape", "fill": "#cbe5fc" }
+      "mark": {"type": "geoshape", "fill": "#cbe5fc"}
     },
     {
       "data": {
         "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/main/js/ne_110m.json",
-        "format": { "type": "topojson", "feature": "ne_110m_graticules_30" }
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
-      "mark": { "type": "geoshape", "fill": null, "stroke": "gray" }
+      "mark": {"type": "geoshape", "fill": null, "stroke": "gray"}
     },
     {
-      "transform": 
-      [
+      "transform": [
         {
           "lookup": "properties.NAME",
-          "from": 
-          {
-            "data": 
-            {
-              "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/main/data/2015.csv"
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/Week-10-Homework/data/2016.csv"
             },
             "key": "Country",
             "fields": ["Score"]
           }
         }
       ],
-
       "mark": {"type": "geoshape", "stroke": "white"},
-      "encoding": 
-      {
-        "color": 
-        {
+      "encoding": {
+        "color": {
           "field": "Score",
           "type": "quantitative",
-          "scale": 
-          {
+          "scale": {
             "type": "threshold",
-            "domain": [2,3,4,5,6,7],
-            "range": ["#A52A2A", "#FF0000","#FF4500","#FFA500","#FFD700","#ADFF2F","#006400"] 
-          } 
+            "domain": [2, 3, 4, 5, 6, 7],
+            "range": [
+              "#A52A2A",
+              "#FF0000",
+              "#FF4500",
+              "#FFA500",
+              "#FFD700",
+              "#ADFF2F",
+              "#006400"
+            ]
+          }
         },
-        "tooltip": 
-        [
+        "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
           {"field": "Score", "type": "quantitative", "title": "Happiness Score"}
         ]
