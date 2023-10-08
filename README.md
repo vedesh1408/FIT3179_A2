@@ -1,4 +1,4 @@
-# Happiness Index of Countries in 2015
+# Happiness Index of Countries in 2016
 A visualisation illustrating how countries or regions ranked in overall happiness.
 
 ## Description
