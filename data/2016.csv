@@ -1,4 +1,4 @@
-Country,Region,Happiness_Rank,Happiness_Score,Lower_Confidence_Interval,Upper_Confidence_Interval,Economy_GDP_per_Capita,Family,Life_Expectancy,Freedom_of_choice,Trust_on_government,Generosity,Dystopia_Residual
+Country,Region,Overall rank,Score,Lower_Confidence_Interval,Upper_Confidence_Interval,GDP per capita,Social Support,"Healthy life expectancy	",Freedom to make life choices,Perceptions of corruption,Generosity,Dystopia_Residual
 Afghanistan,Southern Asia,154,3.36,3.288,3.432,0.38227,0.11037,0.17344,0.1643,0.07112,0.31268,2.14558
 Albania,Central and Eastern Europe,109,4.655,4.546,4.764,0.9553,0.50163,0.73007,0.31866,0.05301,0.1684,1.92816
 Algeria,Middle East and Northern Africa,38,6.355,6.227,6.483,1.05266,0.83309,0.61804,0.21006,0.16157,0.07044,3.40904

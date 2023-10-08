@@ -1,4 +1,4 @@
-Country,Happiness.Rank,Happiness.Score,Whisker.high,Whisker.low,Economy..GDP.per.Capita.,Family,Health..Life.Expectancy.,Freedom,Generosity,Trust..Government.Corruption.,Dystopia.Residual
+Country,Overall rank,Score,Whisker.high,Whisker.low,GDP per capita,Social Support,"Healthy life expectancy	",Freedom to make life choices,Generosity,Perceptions of corruption,Dystopia.Residual
 Afghanistan,141,3.79399991,3.873661415,3.714338405,0.401477218,0.581543326,0.180746779,0.10617952,0.311870933,0.06115783,2.150801182
 Albania,109,4.644000053,4.752464006,4.5355361,0.996192753,0.803685248,0.731159747,0.381498635,0.201312944,0.039864216,1.490441561
 Algeria,53,5.872000217,5.978286434,5.765714001,1.091864467,1.146217465,0.617584646,0.233335808,0.069436647,0.14609611,2.567603827

@@ -1,4 +1,4 @@
-Overall rank,Country or region,Score,GDP per capita,Social support,Healthy life expectancy,Freedom to make life choices,Generosity,Perceptions of corruption
+Overall rank,Country,Score,GDP per capita,Social support,Healthy life expectancy,Freedom to make life choices,Generosity,Perceptions of corruption
 145,Afghanistan,3.632,0.332,0.537,0.255,0.085,0.191,0.036
 112,Albania,4.586,0.916,0.817,0.79,0.419,0.149,0.032
 84,Algeria,5.295,0.979,1.154,0.687,0.077,0.055,0.135
