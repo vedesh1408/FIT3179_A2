@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Happiness Index of Countries in 2017-2019",
+  "title": "Happiness Index of Countries in 2016",
   "width": 1000,
   "height": 500,
   "projection": {"type": "equalEarth"},
@@ -40,9 +40,9 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/Week-10-Homework/data/2019.csv"
+              "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179-HW/Week-10-Homework/data/2016.csv"
             },
-            "key": "Country or region",
+            "key": "Country",
             "fields": ["Score"]
           }
         }
