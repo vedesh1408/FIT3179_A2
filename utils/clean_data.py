@@ -1,7 +1,7 @@
 combined_data = []
 
 # Open all the CSV files
-with open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2016.csv", "r") as f, open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2017.csv", "r") as f2, open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2018.csv", "r") as f3, open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2019.csv", "r") as f4:
+with open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2016.csv", "r") as f, open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2017.csv", "r") as f2, open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2018.csv", "r") as f3, open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2019.csv", "r") as f4,open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/Final.csv", "r") as f5:
     for line in f:
         line = line.strip().split(",")
         country = line[0]
@@ -27,6 +27,12 @@ with open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2016.csv", "r") as f,
         line = line.strip().split(",")
         country = line[1]
         score = line[2] if line[2] != "" else '0'
+        if country != "Country":
+            combined_data.append([country, '2019', score])
+
+    for line in f5:
+        line = line.strip().split(",")
+        code = line[2]
         if country != "Country":
             combined_data.append([country, '2019', score])
 

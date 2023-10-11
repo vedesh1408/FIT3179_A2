@@ -30,14 +30,14 @@ ID,Entity,Year,Score,Code
 28,China,2016,5.245,CHN
 29,Colombia,2016,6.481,COL
 30,Comoros,2016,3.956,COM
-31,Congo,2016,4.236,-1
-32,Dem. Rep. Congo,2016,4.272,-1
+31,Congo,2016,4.236,COG
+32,Dem. Rep. Congo,2016,4.272,COD
 33,Costa Rica,2016,7.087,CRI
 34,Croatia,2016,5.488,HRV
 35,Cyprus,2016,5.546,CYP
 36,Czechia,2016,6.596,CZE
 37,Denmark,2016,7.526,DNK
-38,Dominican Rep.,2016,5.155,-1
+38,Dominican Rep.,2016,5.155,DOM
 39,Ecuador,2016,5.976,ECU
 40,Egypt,2016,4.362,EGY
 41,El Salvador,2016,6.068,SLV
@@ -70,7 +70,7 @@ ID,Entity,Year,Score,Code
 68,Jordan,2016,5.303,JOR
 69,Kazakhstan,2016,5.919,KAZ
 70,Kenya,2016,4.356,KEN
-71,Kosovo,2016,5.401,-1
+71,Kosovo,2016,5.401,XK
 72,Kuwait,2016,6.239,KWT
 73,Kyrgyzstan,2016,5.185,KGZ
 74,Laos,2016,4.876,LAO
@@ -80,7 +80,7 @@ ID,Entity,Year,Score,Code
 78,Libya,2016,5.615,LBY
 79,Lithuania,2016,5.813,LTU
 80,Luxembourg,2016,6.871,LUX
-81,Macedonia,2016,5.121,-1
+81,Macedonia,2016,5.121,MKD
 82,Madagascar,2016,3.695,MDG
 83,Malawi,2016,4.156,MWI
 84,Malaysia,2016,6.005,MYS
@@ -101,10 +101,10 @@ ID,Entity,Year,Score,Code
 99,Nicaragua,2016,5.992,NIC
 100,Niger,2016,3.856,NER
 101,Nigeria,2016,4.875,NGA
-102,North Cyprus,2016,5.771,-1
+102,North Cyprus,2016,5.771,CYP
 103,Norway,2016,7.498,NOR
 104,Pakistan,2016,5.132,PAK
-105,Palestinian Territories,2016,4.754,-1
+105,Palestinian Territories,2016,4.754,PSE
 106,Panama,2016,6.701,PAN
 107,Paraguay,2016,5.538,PRY
 108,Peru,2016,5.743,PER
@@ -124,10 +124,10 @@ ID,Entity,Year,Score,Code
 122,Slovakia,2016,6.078,SVK
 123,Slovenia,2016,5.768,SVN
 124,Somalia,2016,5.44,SOM
-125,Somaliland,2016,5.057,-1
+125,Somaliland,2016,5.057,SO
 126,South Africa,2016,4.459,ZAF
 127,South Korea,2016,5.835,KOR
-128,S. Sudan,2016,3.832,-1
+128,S. Sudan,2016,3.832,SSD
 129,Spain,2016,6.361,ESP
 130,Sri Lanka,2016,4.415,LKA
 131,Sudan,2016,4.139,SDN
@@ -135,7 +135,7 @@ ID,Entity,Year,Score,Code
 133,Sweden,2016,7.291,SWE
 134,Switzerland,2016,7.509,CHE
 135,Syria,2016,3.069,SYR
-136,Taiwan,2016,6.379,-1
+136,Taiwan,2016,6.379,TWN
 137,Tajikistan,2016,4.996,TJK
 138,Tanzania,2016,3.666,TZA
 139,Thailand,2016,6.474,THA
@@ -148,7 +148,7 @@ ID,Entity,Year,Score,Code
 146,Ukraine,2016,4.324,UKR
 147,United Arab Emirates,2016,6.573,ARE
 148,United Kingdom,2016,6.725,GBR
-149,United States of America,2016,7.104,-1
+149,United States of America,2016,7.104,USA
 150,Uruguay,2016,6.545,URY
 151,Uzbekistan,2016,5.987,UZB
 152,Venezuela,2016,6.084,VEN
@@ -182,19 +182,19 @@ ID,Entity,Year,Score,Code
 180,Cambodia,2017,4.168000221,KHM
 181,Cameroon,2017,4.695000172,CMR
 182,Canada,2017,7.315999985,CAN
-183,Central African Rep.,2017,2.693000078,-1
+183,Central African Rep.,2017,2.693000078,CAF
 184,Chad,2017,3.936000109,TCD
 185,Chile,2017,6.65199995,CHL
 186,China,2017,5.272999763,CHN
 187,Colombia,2017,6.356999874,COL
-188,Congo,2017,4.290999889,-1
-189,Dem. Rep. Congo,2017,4.28000021,-1
+188,Congo,2017,4.290999889,COG
+189,Dem. Rep. Congo,2017,4.28000021,COD
 190,Costa Rica,2017,7.078999996,CRI
 191,Croatia,2017,5.293000221,HRV
 192,Cyprus,2017,5.620999813,CYP
 193,Czechia,2017,6.609000206,CZE
 194,Denmark,2017,7.521999836,DNK
-195,Dominican Rep.,2017,5.230000019,-1
+195,Dominican Rep.,2017,5.230000019,DOM
 196,Ecuador,2017,6.007999897,ECU
 197,Egypt,2017,4.735000134,EGY
 198,El Salvador,2017,6.002999783,SLV
@@ -227,7 +227,7 @@ ID,Entity,Year,Score,Code
 225,Jordan,2017,5.335999966,JOR
 226,Kazakhstan,2017,5.818999767,KAZ
 227,Kenya,2017,4.552999973,KEN
-228,Kosovo,2017,5.278999805,-1
+228,Kosovo,2017,5.278999805,PSE
 229,Kuwait,2017,6.105000019,KWT
 230,Kyrgyzstan,2017,5.004000187,KGZ
 231,Latvia,2017,5.849999905,LVA
@@ -237,7 +237,7 @@ ID,Entity,Year,Score,Code
 235,Libya,2017,5.525000095,LBY
 236,Lithuania,2017,5.90199995,LTU
 237,Luxembourg,2017,6.862999916,LUX
-238,Macedonia,2017,5.175000191,-1
+238,Macedonia,2017,5.175000191,MKD
 239,Madagascar,2017,3.644000053,MDG
 240,Malawi,2017,3.970000029,MWI
 241,Malaysia,2017,6.084000111,MYS
@@ -259,10 +259,10 @@ ID,Entity,Year,Score,Code
 257,Nicaragua,2017,6.071000099,NIC
 258,Niger,2017,4.027999878,NER
 259,Nigeria,2017,5.073999882,NGA
-260,North Cyprus,2017,5.809999943,-1
+260,North Cyprus,2017,5.809999943,CYP
 261,Norway,2017,7.537000179,NOR
 262,Pakistan,2017,5.269000053,PAK
-263,Palestinian Territories,2017,4.775000095,-1
+263,Palestinian Territories,2017,4.775000095,PSE
 264,Panama,2017,6.452000141,PAN
 265,Paraguay,2017,5.493000031,PRY
 266,Peru,2017,5.715000153,PER
@@ -283,14 +283,14 @@ ID,Entity,Year,Score,Code
 281,Somalia,2017,5.151000023,SOM
 282,South Africa,2017,4.828999996,ZAF
 283,South Korea,2017,5.837999821,KOR
-284,S. Sudan,2017,3.59100008,-1
+284,S. Sudan,2017,3.59100008,SSD
 285,Spain,2017,6.402999878,ESP
 286,Sri Lanka,2017,4.440000057,LKA
 287,Sudan,2017,4.138999939,SDN
 288,Sweden,2017,7.28399992,SWE
 289,Switzerland,2017,7.493999958,CHE
 290,Syria,2017,3.461999893,SYR
-291,Taiwan,2017,6.421999931,-1
+291,Taiwan,2017,6.421999931,TWN
 292,Tajikistan,2017,5.040999889,TJK
 293,Tanzania,2017,3.348999977,TZA
 294,Thailand,2017,6.423999786,THA
@@ -303,7 +303,7 @@ ID,Entity,Year,Score,Code
 301,Ukraine,2017,4.096000195,UKR
 302,United Arab Emirates,2017,6.647999763,ARE
 303,United Kingdom,2017,6.714000225,GBR
-304,United States of America,2017,6.993000031,-1
+304,United States of America,2017,6.993000031,USA
 305,Uruguay,2017,6.453999996,URY
 306,Uzbekistan,2017,5.971000195,UZB
 307,Venezuela,2017,5.25,VEN
@@ -337,24 +337,24 @@ ID,Entity,Year,Score,Code
 335,Cambodia,2018,4.433,KHM
 336,Cameroon,2018,4.975,CMR
 337,Canada,2018,7.328,CAN
-338,Central African Rep.,2018,3.083,-1
+338,Central African Rep.,2018,3.083,CAF
 339,Chad,2018,4.301,TCD
 340,Chile,2018,6.476,CHL
 341,China,2018,5.246,CHN
 342,Colombia,2018,6.26,COL
-343,Congo,2018,4.559,-1
-344,Dem. Rep. Congo,2018,4.245,-1
+343,Congo,2018,4.559,COG
+344,Dem. Rep. Congo,2018,4.245,COD
 345,Costa Rica,2018,7.072,CRI
 346,Croatia,2018,5.321,HRV
 347,Cyprus,2018,5.762,CYP
 348,Czechia,2018,6.711,CZE
 349,Denmark,2018,7.555,DNK
-350,Dominican Rep.,2018,5.302,-1
+350,Dominican Rep.,2018,5.302,DOM
 351,Ecuador,2018,5.973,ECU
 352,Egypt,2018,4.419,EGY
 353,El Salvador,2018,6.167,SLV
 354,Estonia,2018,5.739,EST
-355,Ethiopia,2018,4.35,-1
+355,Ethiopia,2018,4.35,ETH
 356,Finland,2018,7.632,FIN
 357,France,2018,6.489,FRA
 358,Gabon,2018,4.758,GAB
@@ -382,18 +382,18 @@ ID,Entity,Year,Score,Code
 380,Jordan,2018,5.161,JOR
 381,Kazakhstan,2018,5.79,KAZ
 382,Kenya,2018,4.41,KEN
-383,Kosovo,2018,5.662,-1
+383,Kosovo,2018,5.662,XK
 384,Kuwait,2018,6.083,KWT
 385,Kyrgyzstan,2018,5.131,KGZ
 386,Laos,2018,4.623,LAO
 387,Latvia,2018,5.933,LVA
 388,Lebanon,2018,5.358,LBN
 389,Lesotho,2018,3.808,LSO
-390,Liberia,2018,3.495,-1
-391,Libya,2018,5.566,-1
+390,Liberia,2018,3.495,LBR
+391,Libya,2018,5.566,LBY
 392,Lithuania,2018,5.952,LTU
 393,Luxembourg,2018,6.91,LUX
-394,Macedonia,2018,5.185,-1
+394,Macedonia,2018,5.185,MKD
 395,Madagascar,2018,3.774,MDG
 396,Malawi,2018,3.587,MWI
 397,Malaysia,2018,6.322,MYS
@@ -413,12 +413,12 @@ ID,Entity,Year,Score,Code
 411,Netherlands,2018,7.441,NLD
 412,New Zealand,2018,7.324,NZL
 413,Nicaragua,2018,6.141,NIC
-414,Niger,2018,4.166,-1
+414,Niger,2018,4.166,NER
 415,Nigeria,2018,5.155,NGA
-416,Northern Cyprus,2018,5.835,-1
+416,Northern Cyprus,2018,5.835,CYP
 417,Norway,2018,7.594,NOR
 418,Pakistan,2018,5.472,PAK
-419,Palestinian Territories,2018,4.743,-1
+419,Palestinian Territories,2018,4.743,PSE
 420,Panama,2018,6.43,PAN
 421,Paraguay,2018,5.681,PRY
 422,Peru,2018,5.663,PER
@@ -439,19 +439,19 @@ ID,Entity,Year,Score,Code
 437,Somalia,2018,4.982,SOM
 438,South Africa,2018,4.724,ZAF
 439,South Korea,2018,5.875,KOR
-440,S. Sudan,2018,3.254,-1
+440,S. Sudan,2018,3.254,SSD
 441,Spain,2018,6.31,ESP
 442,Sri Lanka,2018,4.471,LKA
 443,Sudan,2018,4.139,SDN
 444,Sweden,2018,7.314,SWE
 445,Switzerland,2018,7.487,CHE
 446,Syria,2018,3.462,SYR
-447,Taiwan,2018,6.441,-1
+447,Taiwan,2018,6.441,TWN
 448,Tajikistan,2018,5.199,TJK
 449,Tanzania,2018,3.303,TZA
 450,Thailand,2018,6.072,THA
 451,Togo,2018,3.999,TGO
-452,Trinidad & Tobago,2018,6.192,-1
+452,Trinidad & Tobago,2018,6.192,TTO
 453,Tunisia,2018,4.592,TUN
 454,Turkey,2018,5.483,TUR
 455,Turkmenistan,2018,5.636,TKM
@@ -459,7 +459,7 @@ ID,Entity,Year,Score,Code
 457,Ukraine,2018,4.103,UKR
 458,United Arab Emirates,2018,6.774,ARE
 459,United Kingdom,2018,7.19,GBR
-460,United States of America,2018,6.886,-1
+460,United States of America,2018,6.886,USA
 461,Uruguay,2018,6.379,URY
 462,Uzbekistan,2018,6.096,UZB
 463,Venezuela,2018,4.806,VEN
@@ -491,20 +491,20 @@ ID,Entity,Year,Score,Code
 489,Cambodia,2019,4.7,KHM
 490,Cameroon,2019,5.044,CMR
 491,Canada,2019,7.278,CAN
-492,Central African Rep.,2019,3.083,-1
+492,Central African Rep.,2019,3.083,CAF
 493,Chad,2019,4.35,TCD
 494,Chile,2019,6.444,CHL
 495,China,2019,5.191,CHN
 496,Colombia,2019,6.125,COL
 497,Comoros,2019,3.973,COM
-498,Congo,2019,4.812,-1
-499,Dem. Rep. Congo,2019,4.418,-1
+498,Congo,2019,4.812,COG
+499,Dem. Rep. Congo,2019,4.418,COD
 500,Costa Rica,2019,7.167,CRI
 501,Croatia,2019,5.432,HRV
 502,Cyprus,2019,6.046,CYP
 503,Czechia,2019,6.852,CZE
 504,Denmark,2019,7.6,DNK
-505,Dominican Rep.,2019,5.425,-1
+505,Dominican Rep.,2019,5.425,DOM
 506,Ecuador,2019,6.028,ECU
 507,Egypt,2019,4.166,EGY
 508,El Salvador,2019,6.253,SLV
@@ -538,7 +538,7 @@ ID,Entity,Year,Score,Code
 536,Jordan,2019,4.906,JOR
 537,Kazakhstan,2019,5.809,KAZ
 538,Kenya,2019,4.509,KEN
-539,Kosovo,2019,6.1,-1
+539,Kosovo,2019,6.1,XK
 540,Kuwait,2019,6.021,KWT
 541,Kyrgyzstan,2019,5.261,KGZ
 542,Laos,2019,4.796,LAO
@@ -571,10 +571,10 @@ ID,Entity,Year,Score,Code
 569,Niger,2019,4.628,NER
 570,Nigeria,2019,5.265,NGA
 571,North Macedonia,2019,5.274,MKD
-572,Northern Cyprus,2019,5.718,-1
+572,Northern Cyprus,2019,5.718,CYP
 573,Norway,2019,7.554,NOR
 574,Pakistan,2019,5.653,PAK
-575,Palestinian Territories,2019,4.696,-1
+575,Palestinian Territories,2019,4.696,PSE
 576,Panama,2019,6.321,PAN
 577,Paraguay,2019,5.743,PRY
 578,Peru,2019,5.697,PER
@@ -595,19 +595,19 @@ ID,Entity,Year,Score,Code
 593,Somalia,2019,4.668,SOM
 594,South Africa,2019,4.722,ZAF
 595,South Korea,2019,5.895,KOR
-596,S. Sudan,2019,2.853,-1
+596,S. Sudan,2019,2.853,SSD
 597,Spain,2019,6.354,ESP
 598,Sri Lanka,2019,4.366,LKA
 599,Swaziland,2019,4.212,-1
 600,Sweden,2019,7.343,SWE
 601,Switzerland,2019,7.48,CHE
 602,Syria,2019,3.462,SYR
-603,Taiwan,2019,6.446,-1
+603,Taiwan,2019,6.446,TWN
 604,Tajikistan,2019,5.467,TJK
 605,Tanzania,2019,3.231,TZA
 606,Thailand,2019,6.008,THA
 607,Togo,2019,4.085,TGO
-608,Trinidad & Tobago,2019,6.192,-1
+608,Trinidad & Tobago,2019,6.192,TTO
 609,Tunisia,2019,4.461,TUN
 610,Turkey,2019,5.373,TUR
 611,Turkmenistan,2019,5.247,TKM
@@ -615,7 +615,7 @@ ID,Entity,Year,Score,Code
 613,Ukraine,2019,4.332,UKR
 614,United Arab Emirates,2019,6.825,ARE
 615,United Kingdom,2019,7.054,GBR
-616,United States of America,2019,6.892,-1
+616,United States of America,2019,6.892,USA
 617,Uruguay,2019,6.293,URY
 618,Uzbekistan,2019,6.174,UZB
 619,Venezuela,2019,4.707,VEN
