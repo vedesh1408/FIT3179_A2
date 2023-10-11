@@ -1,40 +1,142 @@
-/* Add custom CSS styles for aesthetics */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
+#happiness_index {
+    top:50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    height: 400px;
+    width:800px;
+  }
+  #gdp_per_capita {
+    top:50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    height: 400px;
+    width:800px;
+  }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+  body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+    padding-top: 200px; /* Add padding at the top of the page */
 }
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 20px;
+/* Title container at the top */
+#page-title {
+  background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    margin: 0px; /* Add margin for separation */
+    padding: 10px; /* Add padding for space within the container */
+    width: 1010px; /* Increase the width */
+    height: 100px; /* Increase the height */
+    position: relative; /* Create a relative positioning context */
+    margin-right:40px;
+    margin-top: 175px;
 }
-
-h1 {
-    font-size: 24px;
-    color: #333;
+/* Parent container for both graphs */
+#chart-container {
+    display: flex;
+    flex-direction: column; /* Stack containers vertically */
+    align-items: center; /* Center containers horizontally */
 }
-
-p {
-    font-size: 16px;
-    color: #666;
+/* Container for the first graph with a white background, rounded edges, and margin for separation */
+#happiness_index {
+  background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Add margin for separation */
+    padding: 15px; /* Add padding for space within the container */
+    width: 1000px; /* Increase the width */
+    height: 550px; /* Increase the height */
+    position: relative; /* Create a relative positioning context */
+    margin-right: 150px;
+    
 }
+/* Container for the second graph with a white background, rounded edges, and margin for separation */
+#gdp_per_capita {
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    margin: 0px; /* Add margin for separation */
+    padding: 15px; /* Add padding for space within the container */
+    width: 1000px; /* Increase the width */
+    height: 630px; /* Increase the height */
+    position: relative; /* Create a relative positioning context */
+    margin-right: 135px;
+    margin-top: -25px;
+    
+    
+}
+/* Center the map within the container */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 70px;
+}
+.map-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+.map-container3 {
+  color:  #585252;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-size: 50px;
+    font-family: serif;
+}
+.map-container4 {
+  color:  #585252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 05px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.map-container5 {
+  color:  #585252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    font-size: 15px;
+    font-family: sans-serif;
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+}
+.map-container6 {
+  color:  #585252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+/* Beautifully formatted title */
+.container-title {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #585252; /* Adjust the color as needed */
+    font-family: serif;
+}
+/* Line under the title */
+.title-line {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 96%; /* Adjust the line width as needed */
+    border-bottom: 2px solid  #585252; /* Adjust the line color and thickness as needed */
 }
