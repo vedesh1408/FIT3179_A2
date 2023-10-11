@@ -79,7 +79,7 @@
     {
       "transform": [
         {
-          "lookup": "Code",
+          "lookup": "Entity",
           "from": {
             "data": {
               "url": "https://raw.githubusercontent.com/AshtonLay1/FIT3179_Assignment2/main/dataset/ne_110m_admin_0_countries.json",
@@ -88,7 +88,7 @@
                 "feature": "ne_110m_admin_0_countries"
               }
             },
-            "key": "properties.ISO_A3"
+            "key": "properties.NAME"
           },
           "as": "geo"
         },
