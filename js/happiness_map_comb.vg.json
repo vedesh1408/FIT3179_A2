@@ -1,0 +1,129 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "title": "Happiness Index of Countries",
+
+    "background": "rgba(0, 0, 0, 0)",
+
+    "view": {
+        "stroke": "transparent"
+    },
+
+    "config": {
+        "font": "text-medium",
+        "title": {
+            "font": "text-medium",
+            "fontSize": 14
+        }
+    },
+
+    "params": [{
+            "name": "time_of_day",
+            "value": 9,
+            "bind": {
+                "element": "#time_of_day_external_input"
+            }
+        },
+
+        {
+            "name": "selected_borough",
+            "value": "All",
+            "bind": {
+                "element": "#selected_borough_external_input"
+            }
+        }
+    ],
+
+    "projection": {"type": "equalEarth"},
+
+    "data": {
+        "name": "neighborhood-topo",
+        "url": "https://eshjordan.github.io/fit3179-assignment2/data/nyc-neighbourhoods.topojson",
+        "format": {
+            "type": "topojson",
+            "feature": "nyc-neighbourhoods"
+        }
+    },
+
+    "transform": [{
+            "lookup": "properties.neighborhood",
+            "from": {
+                "data": {
+                    "name": "uberdata",
+                    "url": "https://eshjordan.github.io/fit3179-assignment2/data/all-neighborhoods-data-apr14-new.csv",
+                    "format": {
+                        "type": "csv"
+                    }
+                },
+                "key": "u_neighborhood",
+                "fields": [
+                    "2016",
+                    "2017",
+                    "2018",
+                    "2019"
+                ]
+            }
+        },
+
+        {
+            "filter": "datum.properties.borough == selected_borough || selected_borough == 'All'"
+        },
+
+        {
+            "lookup": "properties.neighborhood",
+            "from": {
+                "data": {
+                    "name": "lookupdata",
+                    "url": "https://eshjordan.github.io/fit3179-assignment2/data/neighborhood-lookup.csv",
+                    "format": {
+                        "type": "csv"
+                    }
+                },
+                "key": "l_neighborhood",
+                "fields": [
+                    "l_pop_2010"
+                ]
+            }
+        },
+
+        {
+            "calculate": "(datum.properties.neighborhood == 'John F. Kennedy International Airport' || datum.properties.neighborhood == 'Great Kills Park' || datum.properties.neighborhood == 'Ellis Island' || datum.properties.neighborhood == 'Hoffman Island' || datum.properties.neighborhood == 'Jamaica Bay' || datum.properties.neighborhood == 'LaGuardia Airport' || datum.properties.neighborhood == 'Pelham Islands' || datum.properties.neighborhood == 'Port Ivory') ? datum['u_hr_' + time_of_day] : (datum['u_hr_' + time_of_day] / (datum.l_pop_2010/100000))",
+            "as": "norm_pickups_neighborhood"
+        }
+    ],
+
+    "mark": "geoshape",
+
+    "encoding": {
+        "color": {
+            "field": "norm_pickups_neighborhood",
+            "type": "quantitative",
+
+            "legend": {
+                "title": "Trips per 100,000 people"
+            },
+
+            "scale": {
+                "domain": ["0", "40000"],
+                "scheme": "reds",
+                "type": "symlog"
+            }
+        },
+
+        "tooltip": [{
+                "title": "Neighborhood",
+                "field": "properties.neighborhood"
+            },
+            {
+                "title": "Borough",
+                "field": "properties.borough"
+            },
+            {
+                "title": "Trips per 100,000 people",
+                "field": "norm_pickups_neighborhood",
+                "format": ",.2f"
+            }
+        ]
+    }
+}
