@@ -34,5 +34,5 @@ with open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/2016.csv", "r") as f,
 with open("C:/Users/vedes/Documents/GitHub/FIT3179_A2/data/combined.csv", "w") as f:
     f.write("Country,Year,Score\n")
     for row in combined_data:
-        line = f"{row[0]},{row[1]},{row[2]}\n"
+        line = f"{row[0]},{int(row[1])},{float(row[2])}\n"
         f.write(line)
