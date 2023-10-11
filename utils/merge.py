@@ -12,5 +12,8 @@ df2 = df2.drop_duplicates(subset=['Country', 'Year'])
 # Merge the dataframes based on 'Country' and 'Year' columns
 merged_df = pd.merge(df2, df1[['Country', 'Year', 'Code']], on=['Country', 'Year'], how='left')
 
+merged_df['Score'] = pd.to_numeric(merged_df['Score'], errors='coerce').astype(float)
+merged_df['Year'] = pd.to_numeric(merged_df['Year'], downcast='integer', errors='coerce').astype(int)
+
 # Save the merged dataframe to a new CSV file
 merged_df.to_csv("merged_data.csv", index=False)
