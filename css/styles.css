@@ -1,142 +1,64 @@
-#happiness_index {
-    top:50px;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-    height: 400px;
-    width:800px;
-  }
-  #gdp_per_capita {
-    top:50px;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-    height: 400px;
-    width:800px;
-  }
+/* Reset some default styles for better consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    height: 100vh;
-    padding-top: 200px; /* Add padding at the top of the page */
+/* Body styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
-/* Title container at the top */
-#page-title {
-  background-color: white;
-    border-radius: 10px; /* Rounded corners */
-    margin: 0px; /* Add margin for separation */
-    padding: 10px; /* Add padding for space within the container */
-    width: 1010px; /* Increase the width */
-    height: 100px; /* Increase the height */
-    position: relative; /* Create a relative positioning context */
-    margin-right:40px;
-    margin-top: 175px;
-}
-/* Parent container for both graphs */
-#chart-container {
-    display: flex;
-    flex-direction: column; /* Stack containers vertically */
-    align-items: center; /* Center containers horizontally */
-}
-/* Container for the first graph with a white background, rounded edges, and margin for separation */
-#happiness_index {
-  background-color: white;
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px; /* Add margin for separation */
-    padding: 15px; /* Add padding for space within the container */
-    width: 1000px; /* Increase the width */
-    height: 550px; /* Increase the height */
-    position: relative; /* Create a relative positioning context */
-    margin-right: 150px;
-    
-}
-/* Container for the second graph with a white background, rounded edges, and margin for separation */
-#gdp_per_capita {
-    background-color: white;
-    border-radius: 10px; /* Rounded corners */
-    margin: 0px; /* Add margin for separation */
-    padding: 15px; /* Add padding for space within the container */
-    width: 1000px; /* Increase the width */
-    height: 630px; /* Increase the height */
-    position: relative; /* Create a relative positioning context */
-    margin-right: 135px;
-    margin-top: -25px;
-    
-    
-}
-/* Center the map within the container */
-.map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 120px;
-    margin-top: 70px;
-}
-.map-container2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 70px;
-    margin-top: 70px;
-}
-.map-container3 {
-  color:  #585252;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    margin-top: 0px;
-    font-size: 50px;
-    font-family: serif;
-}
-.map-container4 {
-  color:  #585252;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 05px;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-.map-container5 {
-  color:  #585252;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    font-size: 15px;
-    font-family: sans-serif;
 
+/* Page container styles */
+.page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
 }
-.map-container6 {
-  color:  #585252;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    font-size: 15px;
-    font-family: sans-serif;
 
+/* Visualization container styles */
+.visualization {
+  margin: 20px 0;
 }
-/* Beautifully formatted title */
-.container-title {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #585252; /* Adjust the color as needed */
-    font-family: serif;
+
+/* Text styles */
+h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #333;
 }
-/* Line under the title */
-.title-line {
-    position: absolute;
-    top: 50px;
-    left: 15px;
-    width: 96%; /* Adjust the line width as needed */
-    border-bottom: 2px solid  #585252; /* Adjust the line color and thickness as needed */
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #0077b6; /* Blue color for headings */
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Customize Pure.css grid for responsive layout */
+.pure-g {
+  margin-top: 20px;
+}
+
+.pure-u-1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light gray background for descriptions */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Highlighted text */
+.highlight {
+  font-weight: bold;
+  color: #0077b6;
 }
