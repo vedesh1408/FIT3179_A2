@@ -1,0 +1,121 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Happiness Score vs. GDP per Capita and Life Expectancy in 2016",
+      "subtitle": [
+        "Hint: Use mouse to zoom and pan and double-click to reset"
+      ],
+      "fontSize": 18,
+      "color": "dodgerblue"
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/2016.csv"
+    },
+    "background": null,
+    "transform": [
+      {"calculate": "datum['Freedom to make life choices'] * 100", "as": "Freedom of choice (%)"},
+      {"calculate": "datum['Perceptions of corruption'] * 100", "as": "Government trust (%)"},
+      {"filter": "datum['GDP per capita'] > GDP_selector"},
+      {"filter": "Continent_selection == null || datum.Region == Continent_selection"}
+    ],
+    "params": [
+      {"name": "view", "select": "interval", "bind": "scales"},
+      {
+        "name": "GDP_selector",
+        "value": 0,
+        "bind": {
+          "input": "range",
+          "min": 0,
+          "max": 1.6,
+          "step": 0.01,
+          "name": "GDP per capita: "
+        }
+      },
+      {
+        "name": "Continent_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Western Europe",
+            "North America",
+            "Australia and New Zealand",
+            "Middle East and Northern Africa",
+            "Latin America and Caribbean",
+            "Southeastern Asia",
+            "Central and Eastern Europe",
+            "Sub-Saharan Africa"
+          ],
+          "labels": [
+            "Show All",
+            "Western Europe",
+            "North America",
+            "Australia and New Zealand",
+            "Middle East and Northern Africa",
+            "Latin America and Caribbean",
+            "Southeastern Asia",
+            "Central and Eastern Europe",
+            "Sub-Saharan Africa"
+          ],
+          "name": "Continent: "
+        }
+      }
+    ],
+    "mark": {
+      "type": "circle",
+      "filled": true,
+      "opacity": 0.8,
+      "stroke": "navy",
+      "strokeWidth": 1
+    },
+    "encoding": {
+      "x": {
+        "field": "GDP per capita",
+        "scale": {"type": "linear", "nice": true},
+        "title": "GDP per capita",
+        "axis": {"labelFont": "Arial", "labelFontSize": 12, "labelAngle": 270}
+      },
+      "y": {
+        "field": "Score",
+        "type": "quantitative",
+        "scale": {"zero": false},
+        "axis": {"title": "Happiness Score", "labelFont": "Arial", "labelFontSize": 12},
+        "title": "Happiness Score"
+      },
+      "size": {
+        "field": "Healthy life expectancy",
+        "type": "quantitative",
+        "legend": {"title": "Life Expectancy"},
+        "scale": {
+          "type": "linear",
+          "range": [10, 200], 
+          "domainMin": 0,
+          "domainMax": 1,
+          "nice": true
+        }
+      },
+      "color": {
+        "field": "Healthy life expectancy",
+        "type": "quantitative",
+        "legend": {"title": "Life Expectancy"},
+        "scale": {
+          "type": "linear",
+          "range": ["red", "green"],
+          "domainMin": 0,
+          "domainMax": 1,
+          "nice": true
+        }
+      },
+      "tooltip": [
+        {"field": "Country", "type": "nominal", "title": "Country"},
+        {"field": "Overall rank", "type": "ordinal", "title": "Rank"},
+        {"field": "Score", "type": "quantitative", "title": "Happiness Score"},
+        {"field": "Freedom of choice (%)", "type": "quantitative", "title": "Freedom of Choice (%)"},
+        {"field": "Government trust (%)", "type": "quantitative", "title": "Government Trust (%)"},
+        {"field": "Healthy life expectancy", "type": "quantitative", "title": "Life Expectancy"}
+      ]
+    }
+  }
+  
