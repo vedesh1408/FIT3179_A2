@@ -1,11 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/Worst_5_long.csv"
+      "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/top5_long.csv"
     },
     "title": {
-      "text": "Worst 5 Countries",
-      "subtitle": "Countries with the lowest scores for each measurement",
+      "text": "Top 5 Countries",
+      "subtitle": "Countries with the highest scores for each measurement",
       "fontSize": 20,
       "font": "Helvetica",
       "color": "darkblue",
