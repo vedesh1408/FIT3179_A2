@@ -1,59 +1,30 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/top5_long.csv"
-    },
-    "title": {
-      "text": "Top 5 Countries",
-      "subtitle": "Countries with the highest scores for each measurement",
-      "fontSize": 20,
-      "font": "Helvetica",
-      "color": "darkblue",
-      "subtitleColor": "gray"
-    },
-    "width": 800,
+    "data": {"url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/2016.csv"},
+    "title": {"text": "Dystopia Residual metric by regions", "fontSize": 16},
+    "width": 400,
     "height": 400,
-    "mark": {
-      "type": "bar",
-      "color": "steelblue",
-      "opacity": 0.8
-    },
-    "encoding": {
-      "y": {
-        "field": "Values",
-        "type": "quantitative",
-        "title": "Score",
-        "axis": {"titleColor": "darkblue", "labelColor": "darkblue"}
-      },
-      "x": {
-        "field": "Country",
-        "type": "ordinal",
-        "title": "Countries",
-        "axis": {
-          "labelAngle": 0,
-          "labelColor": "darkblue",
-          "titleColor": "darkblue"
-        }
-      },
-      "xOffset": {"field": "Measurement"},
-      "color": {
-        "field": "Measurement",
-        "scale": {
-          "scheme": "category10"
-        },
-        "legend": {"title": "Measurement"},
-        "sort": "-x"
-      },
-      "tooltip": [
-        {"field": "Country", "type": "nominal", "title": "Country"},
-        {"field": "Measurement", "type": "nominal", "title": "Measurement"},
-        {"field": "Values", "type": "quantitative", "title": "Score"}
-      ]
-    },
     "config": {
-      "axis": {"domainWidth": 2, "domainColor": "gray"},
       "view": {"stroke": "transparent"},
-      "legend": {"titleColor": "darkblue"}
+      "arc": {"fill": "red", "stroke": "white"},
+      "background": null
+    },
+    "transform": [
+      {"calculate": "datum['Freedom to make life choices'] * 100", "as": "Freedom of Choice (%)"},
+      {"calculate": "datum['Perceptions of corruption']  * 100", "as": "Government Trust (%)"},
+      {"calculate": "datum['Dystopia_Residual']  * 100", "as": "Dystopia Residual (%)"}
+    ],
+    "mark": {"type": "arc", "innerRadius": 35, "outerRadius":200},
+    "encoding": {
+      "theta": {"field": "Dystopia Residual (%)", "type": "quantitative"},
+      "color": {"field": "Region", "type": "nominal"},
+      "tooltip": [
+        {"field": "Country", "type": "nominal"},
+        {"field": "Overall rank", "type": "ordinal"},
+        {"field": "Score", "type": "quantitative"},
+        {"field": "Freedom of Choice (%)", "type": "quantitative", "format": ".2f"},
+        {"field": "Government Trust (%)", "type": "quantitative", "format": ".2f"},
+        {"field": "Dystopia Residual (%)", "type": "quantitative", "format": ".2f"}
+      ]
     }
   }
-  

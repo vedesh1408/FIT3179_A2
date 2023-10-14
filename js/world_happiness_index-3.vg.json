@@ -1,59 +1,72 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/Worst_5_long.csv"
+      "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/combined_top5.csv",
+      "format": {"type": "csv"}
     },
     "title": {
-      "text": "Worst 5 Countries",
-      "subtitle": "Countries with the lowest scores for each measurement",
-      "fontSize": 20,
+      "text": "Top vs. Worst Countries",
+      "subtitle": "Comparison of Scores for Different Measurements",
+      "fontSize": 24,
       "font": "Helvetica",
-      "color": "darkblue",
+      "color": "navy",
       "subtitleColor": "gray"
     },
     "width": 800,
     "height": 400,
+    "transform": [
+      {
+        "filter": {
+          "selection": "categoryToggle"
+        }
+      }
+    ],
     "mark": {
       "type": "bar",
-      "color": "steelblue",
-      "opacity": 0.8
+      "cornerRadius": 3
     },
     "encoding": {
+      "x": {
+        "field": "Country",
+        "type": "ordinal",
+        "title": "Country",
+        "axis": {"labelAngle": 0, "labelColor": "navy", "titleColor": "navy"}
+      },
       "y": {
         "field": "Values",
         "type": "quantitative",
         "title": "Score",
-        "axis": {"titleColor": "darkblue", "labelColor": "darkblue"}
-      },
-      "x": {
-        "field": "Country",
-        "type": "ordinal",
-        "title": "Countries",
-        "axis": {
-          "labelAngle": 0,
-          "labelColor": "darkblue",
-          "titleColor": "darkblue"
-        }
+        "axis": {"titleColor": "navy", "labelColor": "navy"}
       },
       "xOffset": {"field": "Measurement"},
       "color": {
         "field": "Measurement",
+        "type": "nominal",
         "scale": {
-          "scheme": "category10"
+          "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
         },
-        "legend": {"title": "Measurement"},
-        "sort": "-x"
+        "legend": {"title": "Measurement", "titleColor": "navy", "labelColor": "navy"}
       },
       "tooltip": [
-        {"field": "Country", "type": "nominal", "title": "Country"},
-        {"field": "Measurement", "type": "nominal", "title": "Measurement"},
-        {"field": "Values", "type": "quantitative", "title": "Score"}
+        {"field": "Country", "title": "Country"},
+        {"field": "Measurement", "title": "Measurement"},
+        {"field": "Values", "title": "Score"}
       ]
     },
     "config": {
       "axis": {"domainWidth": 2, "domainColor": "gray"},
-      "view": {"stroke": "transparent"},
-      "legend": {"titleColor": "darkblue"}
+      "view": {"stroke": "transparent"}
+    },
+    "selection": {
+      "categoryToggle": {
+        "type": "single",
+        "fields": ["Category"],
+        "bind": {
+          "input": "radio",
+          "options": ["Both", "Top", "Worst"],
+          "name": "Category"
+        }
+      }
     }
   }
   
