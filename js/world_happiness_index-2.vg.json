@@ -10,11 +10,11 @@
     {
       "name": "Year_Filter",
       "value": [
-        2016
+        2011
       ],
       "bind": {
         "input": "range",
-        "min": 2016,
+        "min": 2011,
         "max": 2019,
         "step": 1,
         "name": "Select year:"
@@ -22,7 +22,7 @@
     }
   ],
   "data": {
-    "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/Final.csv"
+    "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/world-happiness-report-rank.csv"
   },
   "layer": [
     {
