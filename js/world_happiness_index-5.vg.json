@@ -1,0 +1,90 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "How countries happiness rank changes over the years",
+    "width": 600,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/heat_map_v2.csv"
+    },
+    "transform": [
+      {
+        "filter": "datum.Year >= 2015"
+      },
+      {
+        "filter": {
+          "field": "Country",
+          "oneOf": ["Bulgaria", "Ivory Coast", "Philippines", "Gabon", "Yemen", "Venezuela"]
+        }
+      }
+    ],
+    "encoding": {
+      "y": {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country",
+        "sort": "ascending"
+      },
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Year"
+      }
+    },
+    "layer": [
+      {
+        "mark": "rect",
+        "encoding": {
+          "color": {
+            "field": "Overall rank",
+            "type": "quantitative",
+            "scale": {"scheme": "redyellowgreen","reverse": true},
+            "legend": {
+              "title": "Overall Rank",
+              "direction": "horizontal",
+              "gradientLength": 120
+            }
+          },
+          "tooltip": [
+            {
+              "field": "Country",
+              "type": "nominal",
+              "title": "Country"
+            },
+            {
+              "field": "Overall rank",
+              "type": "quantitative",
+              "title": "Overall Rank",
+              "format": ".0f"
+            },
+            {
+              "field": "Year",
+              "type": "ordinal",
+              "title": "Year"
+            }
+          ]
+        }
+      },
+      {
+        "mark": "text",
+        "encoding": {
+          "text": {
+            "field": "Overall rank",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          "color": {
+            "value": "black"
+          }
+        }
+      }
+    ],
+    "config": {
+      "axis": {
+        "labelFontSize": 12
+      },
+      "view": {
+        "stroke": "transparent"
+      }
+    }
+  }
+  
