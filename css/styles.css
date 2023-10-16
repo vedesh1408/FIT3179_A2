@@ -56,6 +56,15 @@ body {
   border-radius: 5px;
 }
 
+.footer {
+  background-color: #B87333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 .page {
   position: relative;
   width: 850px;

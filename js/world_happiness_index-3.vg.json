@@ -27,21 +27,19 @@
       "x": {
         "field": "Country",
         "type": "ordinal",
-        "title": "Country",
-        "axis": {"labelAngle": 0, "labelColor": "navy", "titleColor": "navy"}
+        "title": "Country"
       },
       "y": {
         "field": "Values",
         "type": "quantitative",
-        "title": "Score",
-        "axis": {"titleColor": "navy", "labelColor": "navy"}
+        "title": "Score"
       },
       "xOffset": {"field": "Measurement"},
       "color": {
         "field": "Measurement",
         "type": "nominal",
         "scale": {
-          "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
+          "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]
         },
         "legend": {"title": "Measurement"}
       },

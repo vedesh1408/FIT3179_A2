@@ -5,7 +5,7 @@
       "fontSize": 18,
       "color": "dodgerblue"
     },
-    "width": 600,
+    "width": 620,
     "height": 300,
     "data": {
       "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/heat_map_v2.csv"

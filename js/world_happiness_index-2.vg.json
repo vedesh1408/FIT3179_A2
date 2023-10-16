@@ -127,7 +127,10 @@
         },
         "tooltip": [
           {"field": "Entity", "type": "nominal", "title": "Country"},
-          {"field": "Score", "type": "quantitative", "title": "Happiness Score"}
+          {"field": "Score", "type": "quantitative", "title": "Happiness Score"},
+          {"field": "Year", "type": "quantitative", "title": "Year"}
+
+
         ]
       }
     }
