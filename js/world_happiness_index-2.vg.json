@@ -1,8 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
+  "width": 720,
   "height": 450,
-  "title": "Happiness Index of Countries",
+  "title": {
+    "text": "Happiness Index of Countries 2011-2019",
+    "fontSize": 18,
+    "color": "dodgerblue"
+  },
   "projection": {
     "type": "equalEarth"
   },

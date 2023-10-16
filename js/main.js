@@ -15,7 +15,13 @@ vegaEmbed('#world_happiness_index-2', specVis2, {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
-vegaEmbed('#world_happiness_index-3', specVis3, { "actions": false });
+//vegaEmbed('#world_happiness_index-3', specVis3, { "actions": false });
+
+vegaEmbed('#world_happiness_index-3', specVis3, {
+    "actions": false
+}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
 
 vegaEmbed('#world_happiness_index-4', specVis4, { "actions": false }).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view

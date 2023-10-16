@@ -1,13 +1,17 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/2016.csv"},
-    "title": {"text": "Dystopia Residual metric by regions", "fontSize": 16},
-    "width": 400,
-    "height": 400,
+    "title": {
+      "text": "Dystopia Residual metric by regions",
+      "subtitle": "Comparison of Scores for Different Measurements",
+      "fontSize": 18,
+      "color": "dodgerblue"
+    },
+    "width": 500,
+    "height": 500,
     "config": {
       "view": {"stroke": "transparent"},
-      "arc": {"fill": "red", "stroke": "white"},
-      "background": null
+      "arc": {"fill": "red", "stroke": "white"}
     },
     "transform": [
       {"calculate": "datum['Freedom to make life choices'] * 100", "as": "Freedom of Choice (%)"},

@@ -1,6 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "How countries happiness rank changes over the years",
+    "title": {
+      "text": "How countries happiness rank changes over the years",
+      "fontSize": 18,
+      "color": "dodgerblue"
+    },
     "width": 600,
     "height": 300,
     "data": {
@@ -40,7 +44,7 @@
             "scale": {"scheme": "redyellowgreen","reverse": true},
             "legend": {
               "title": "Overall Rank",
-              "direction": "horizontal",
+              "direction": "vertical",
               "gradientLength": 120
             }
           },

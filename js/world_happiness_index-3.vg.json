@@ -7,12 +7,10 @@
     "title": {
       "text": "Top vs. Worst Countries",
       "subtitle": "Comparison of Scores for Different Measurements",
-      "fontSize": 24,
-      "font": "Helvetica",
-      "color": "navy",
-      "subtitleColor": "gray"
+      "fontSize": 18,
+      "color": "dodgerblue"
     },
-    "width": 800,
+    "width":550,
     "height": 400,
     "transform": [
       {
@@ -45,7 +43,7 @@
         "scale": {
           "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
         },
-        "legend": {"title": "Measurement", "titleColor": "navy", "labelColor": "navy"}
+        "legend": {"title": "Measurement"}
       },
       "tooltip": [
         {"field": "Country", "title": "Country"},
@@ -64,7 +62,8 @@
         "bind": {
           "input": "radio",
           "options": ["Both", "Top", "Worst"],
-          "name": "Category"
+          "labels": ["Both ", "Happiest ", "Unhappiest "],
+          "name": " "
         }
       }
     }

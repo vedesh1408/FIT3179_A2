@@ -8,12 +8,12 @@
       "fontSize": 18,
       "color": "dodgerblue"
     },
-    "width": 600,
-    "height": 400,
+    "width": 630,
+    "height": 350,
     "data": {
       "url": "https://raw.githubusercontent.com/vedesh1408/FIT3179_A2/main/data/2016.csv"
     },
-    "background": null,
+
     "transform": [
       {"calculate": "datum['Freedom to make life choices'] * 100", "as": "Freedom of choice (%)"},
       {"calculate": "datum['Perceptions of corruption'] * 100", "as": "Government trust (%)"},

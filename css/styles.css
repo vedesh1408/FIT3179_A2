@@ -1,47 +1,48 @@
 #world_happiness_index-1 {
-  
   top: -8px;
-  bottom: 100px;
-  height: 150px;
-  width: 200px;
-  margin-bottom: 150px;
-}
-
-#world_happiness_index-2 {
-  top: 27px;
   bottom: 100px;
   height: 400px;
   width: 500px;
   margin-left: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
+}
+
+#world_happiness_index-2 {
+  top: -8px;
+  bottom: 100px;
+  height: 400px;
+  width: 500px;
+  margin-left: 20px;
+  margin-bottom: 150px;
 }
 
 #world_happiness_index-3 {
   top: -8px;
   bottom: 100px;
   height: 400px;
-  width: 800px;
-  margin-bottom: 50px;
+  width: 500px;
+  margin-left: 20px;
+  margin-bottom: 150px;
 }
 
 #world_happiness_index-4 {
-  top: 27px;
+  top: -8px;
   bottom: 100px;
-  height: 550px;
+  height: 400px;
   width: 500px;
+  margin-left: 20px;
   margin-bottom: 150px;
 }
 
 #world_happiness_index-5 {
   top: 27px;
-  bottom: 100px;
+  bottom: -300px;
   height: 500px;
   width: 500px;
-  margin-bottom: 150px;
 }
 
 body {
-  font-family: 'Onest', sans-serif;
+  font-family: 'Arial';
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -53,45 +54,6 @@ body {
   text-align: center;
   padding: 10px;
   border-radius: 5px;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  /* Optional: To space out the flex items */
-  align-items: start;
-}
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  color: white;
-  letter-spacing: 1.5px;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  color: black;
-  letter-spacing: 1px;
-}
-
-p {
-  font-size: 16px;
-  color: #696969;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
 }
 
 .page {
@@ -111,27 +73,7 @@ img {
   left: 0;
   background-image: url('Yellow and White Illustrative Smile Emoji Phone Wallpaper.png');
   opacity: 0.6;
-  /* Adjust this value to your desired opacity */
   z-index: -1;
-}
-
-.pure-u-2-3 {
-  flex: 0 0 66.66%;
-  /* This makes it take up 2/3 of the container's width */
-}
-
-.pure-u-1-3 {
-  flex: 0 0 33.33%;
-  display: flex;
-  justify-content: space-between;
-  /* Optional: To space out the flex items */
-  align-items: start;
-  /* This makes it take up 1/3 of the container's width */
-}
-
-.pure-u-2-2 {
-  flex: 0 0 50%;
-  /* This makes it take up 1/3 of the container's width */
 }
 
 .container-normal {
@@ -144,120 +86,25 @@ img {
   margin-top: 20px;
 }
 
-.dropdown {
-  color: blue;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 100px;
-}
-
-
-/* Apply styles to select elements */
-
-select {
-  appearance: none;
-  /* Remove default styles (e.g., arrows) on some browsers */
-  background-color: #f2f2f2;
-  /* Background color */
-  border: 1px solid #ccc;
-  /* Add a border */
-  padding: 5px 10px;
-  /* Add some padding for spacing */
-  font-family: inherit;
-  font-size: 16px;
-  /* Increase font size */
-  color: #333;
-  /* Text color */
-  border-radius: 5px;
-  /* Rounded corners */
-  width: 100%;
-  /* Make the dropdown width 100% of its container */
-}
-
-
-/* Apply styles when the dropdown is focused (clicked) */
-
-select:focus {
-  outline: none;
-  /* Remove the default focus outline */
-  border-color: #007BFF;
-  /* Change the border color on focus */
-}
-
-
-/* Apply styles on hover */
-
-select:hover {
-  background-color: #e0e0e0;
-  /* Lighten the background color on hover */
-  cursor: pointer;
-  /* Change cursor on hover */
-}
-
-
-/* Apply styles on selection (option) */
-
-select option {
-  font-family: inherit;
-  font-size: 16px;
-  /* Match the font size with the dropdown */
-  color: #333;
-  /* Text color */
-}
-
-
-/* Style the arrow (if 'appearance: none' is used) */
-
-select::after {
-  content: '\25BC';
-  /* Unicode character for a down arrow */
-  position: absolute;
-  top: 0;
-  right: 10px;
-  padding: 5px;
-  pointer-events: none;
-  /* Make sure the arrow doesn't interfere with clicking */
-  color: #555;
-  /* Arrow color */
-}
-
 .vega-bind {
   margin-bottom: 20px;
   margin-top: 5px;
-  width: 40%;
-  font-family: 'Onest', sans-serif;
+  width: 75%;
+  font-family: Arial;
 }
 
-.countries {
-  color: #b30000;
+.countries_bad {
+  color: #e61414;
+  font-weight: bold;
+}
+
+.countries_good {
+  color: #15cf53;
   font-weight: bold;
 }
 
 .shaded {
   color: #fdcc8a;
-}
-
-.men {
-  color: #00a6ed;
-  font-weight: bold;
-}
-
-.women {
-  color: #fc6e32;
-  font-weight: bold;
-}
-
-.industry {
-  color: orange;
-  font-weight: bold;
 }
 
 .container-images {
@@ -270,13 +117,45 @@ select::after {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  /* Optional: To space out the flex items */
   align-items: start;
 }
 
-.bios {
-  padding: 10px;
-  font-family: 'Onest', sans-serif;
-  font-size: 12px;
-  color: black;
+
+select {
+  appearance: none;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+  width: 100%;
 }
+
+select:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+select:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+select option {
+  font-family: inherit;
+  font-size: 16px;
+  color: #333;
+}
+
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 5px;
+  pointer-events: none;
+  color: #555;
+}
+

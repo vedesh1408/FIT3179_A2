@@ -3,9 +3,9 @@
 
 <head>
     <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <script src="js/main.js"></script>
     <link rel="icon" type="image/x-icon" href="css/1000_F_278699366_G3tjBdDUM1jdkr43w5ORMC783rqX5YEB.jpg">
     <title>World Happiness Report</title>
@@ -29,7 +29,8 @@
         <!-- pure grid group -->
         <div class="header">
             <h1>World Happiness Report</h1>
-            <p style="color: white;">This visualisation delves into the break-down of the world's top 1% in 2023.</p>
+            <p style="color: white;">Join us on a joyful journey through world happiness! Most of our visualizations will focus on the transformative year 
+                of 2016 when the World Happiness Report underwent significant changes. </p>
         </div>
         <!-- end pure grid group -->
         <div class="container-normal">
@@ -41,61 +42,71 @@
                     sheds light on the challenges faced by Africa and other continents.</p>
         
             </div>
+            <div id=world_happiness_index-2></div>
+
+        </div>
+
+        <div class="container-normal">
+            <div class="description description-right">
+                <h2 align="center">The Influence of Prosperity on Joy and Life Expectency</h2>
+                <p align="center" style="text-align: justify;">Our adventure continues by examining the close relationship between a country's economic prosperity, 
+                    measured by GDP per capita, and the happiness and life expectency of its citizens. Discover how higher GDP often leads to increased happiness 
+                    and life expectency, painting a vivid picture of the importance of economic well-being in the pursuit of contentment.
+                </p>
+        
+            </div>
             <div id=world_happiness_index-1></div>
 
         </div>
-        <!-- pure grid group -->
-        <div class="container">
-            <div class="pure-u-2-3">
-                <div id="world_happiness_index-2" class="vis-container"></div>
-            </div>
-            <div class="pure-u-1-3">
-                <div class="description description-right">
-                    <h2>Gender Gap</h2>
-                    <p>It is evident that <span class="men"> men </span>constitute a much larger portion of global billionaires than <span class="women"> women</span>. It is also important to note that most people amass their wealth much later in life.
-                        <br><br> Zoom in and drag to explore the graph more closely.
-                    </p>
-                </div>
-            </div>
-        </div>
 
-
-        <!-- end pure grid group -->
-
-        <div class=container-normal>
+        <div class="container-normal">
             <div class="description description-right">
-                <h2>Gender distribution in the top 5 countries</h2>
-                <p>This graph explores in more detail the differences between countries and genders. As seen before, <span class="countries">USA </span> and <span class="countries"> China</span> are well in front of the other countries.
+                <h2 align="center">The Fabulous Five vs. The Frowning Five</h2>
+                <p align="center" style="text-align: justify;">Explore a unique comparison between the world's top five happiest nations and the bottom five in the happiness 
+                    ranks. We're pitting measures like freedom, generosity, corruption perceptions, and social support against each other in an extraordinary face-off. 
+                    Discover what sets the cheeriest countries apart from the least happy ones in this captivating showdown!
+
+                    In 2016, <span class="countries_good">Denmark, Finland, Iceland, Norway </span> and <span class="countries_good">Switzerland </span> were the happiest and <span class="countries_bad">Burundi, Syria, Togo, Afghanistan </span>and <span class="countries_bad">Benin </span> were the least happy countries.
                 </p>
-                <p>Each 🟦 represents 10 male billionaires.</p>
-                <p>Each 🟧 represents 10 female billionaires.</p>
+        
             </div>
             <div id=world_happiness_index-3></div>
 
         </div>
         <div class=" container-normal">
             <div class="description description-right">
-                <h2>Billionaire playground</h2>
-                <p>This chart offers a vivid illustration of the industries where billionaires have amassed their fortunes. Three sectors stand out: <span class="industry">Technology </span> , <span class="industry"> Finance & Investments </span> and
-                    <span class="industry">Fashion & Retail</span>. The dominance of the technology industry reflects our era's digital transformation. Simultaneously, the prominence of fashion represents the hold of luxury brands on the world. </p>
-                <p>
-                    Note: This chart is interactive. Move the two sliders to reposition the bubbles.
+                <h2 align="center">Regions Unveiled: Unmasking Happiness Residues</h2>
+                <p align="center" style="text-align: justify;">
+                    Delve into the fascinating world of regional disparities with the Dystopia Residual Matrix. Uncover the hidden factors that contribute to each region's 
+                    unique happiness landscape. But what's the Dystopia Residual, you ask? It's a whimsical measure that helps us understand how far each region's 
+                    happiness level deviates from the hypothetical 'dystopia,' adding an intriguing layer to the story of global well-being.
                 </p>
             </div>
-            <div id=world_happiness_index-4></div>
+            <div id=world_happiness_index-4 align="center"></div>
+            <p  align="center" style="text-align: justify;">
+                This whimsical metric measures how far a region's happiness level stands from a make-believe state of ultimate unhappiness, known as 'dystopia.' It's like 
+                gauging the gap between a place's real joy and the absolute pits of despair. The bigger the gap, the happier the region is, making it a unique and playful 
+                way to understand regional happiness. So, when you see a high Dystopia Residual, it means that region is a long way from the land of gloom, and happiness reigns 
+                supreme!
+            </p>
 
         </div>
+
         <div class="container-normal">
             <div class="description description-right">
-                <h2>Where the money came from</h2>
-                <p>This following treemap offers a more granular view of specific companies founded by the billionaires. This offers insight on the diverse avenues which influence global wealth. </p>
-                <p>Play around by selecting a layout and changing the aspect ratio.</p>
-                <p>Click on a block to have a closer look on the respective industry. Click all to view all.</p>
+                <h2 align="center">The Fabulous Five vs. The Frowning Five</h2>
+                <p align="center" style="text-align: justify;">Explore a unique comparison between the world's top five happiest nations and the bottom five in the happiness 
+                    ranks. We're pitting measures like freedom, generosity, corruption perceptions, and social support against each other in an extraordinary face-off. 
+                    Discover what sets the cheeriest countries apart from the least happy ones in this captivating showdown!
+
+                    In 2016, <span class="countries_good">Denmark, Finland, Iceland, Norway </span> and <span class="countries_good">Switzerland </span> were the happiest and <span class="countries_bad">Burundi, Syria, Togo, Afghanistan </span>and <span class="countries_bad">Benin </span> were the least happy countries.
+                </p>
+        
             </div>
-
             <div id=world_happiness_index-5></div>
-
         </div>
+
+
 
     </div>
     <!-- end pure grid group -->
