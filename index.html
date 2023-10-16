@@ -2,60 +2,107 @@
 <html>
 
 <head>
-    <title>World Happiness Report</title>
-
-    <!-- Import Vega & Vega-Lite -->
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="css/1000_F_278699366_G3tjBdDUM1jdkr43w5ORMC783rqX5YEB.jpg">
+    <title>World Happiness Report</title>
+</head>
+<!-- CSS file -->
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest&family=Playfair+Display&display=swap" rel="stylesheet">
 
-    <!-- Import pure.css -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <!-- CSS file -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
+
 <body>
+
     <div class="page">
-        <h1>The Quest for Global Happiness</h1>
 
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <div class="description">
-                    <h2>The Influence of Prosperity on Joy</h2>
-                    <p>Our adventure begins by examining the close relationship between a country's economic prosperity, measured by GDP per capita, and the happiness of its citizens. Discover how higher GDP often leads to increased happiness, painting a vivid picture of the importance of economic well-being in the pursuit of contentment.</p>
+        <!-- pure grid group -->
+        <div class="header">
+            <h1>World Happiness Report</h1>
+            <p style="color: white;">This visualisation delves into the break-down of the world's top 1% in 2023.</p>
+        </div>
+        <!-- end pure grid group -->
+        <div class="container-normal">
+            <div class="description description-right">
+                <h2 align="center">A World of Happiness Mapped</h2>
+                <p align="center" style="text-align: justify;">Start your exploration by delving into a vivid chloropleth map, showcasing global happiness scores. 
+                    The map unveils fascinating findings, including the regions where happiness reigns supreme. 
+                    North and South America, Australia, and Europe are among the bright spots, while the map also 
+                    sheds light on the challenges faced by Africa and other continents.</p>
+        
+            </div>
+            <div id=world_happiness_index-1></div>
+
+        </div>
+        <!-- pure grid group -->
+        <div class="container">
+            <div class="pure-u-2-3">
+                <div id="world_happiness_index-2" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-3">
+                <div class="description description-right">
+                    <h2>Gender Gap</h2>
+                    <p>It is evident that <span class="men"> men </span>constitute a much larger portion of global billionaires than <span class="women"> women</span>. It is also important to note that most people amass their wealth much later in life.
+                        <br><br> Zoom in and drag to explore the graph more closely.
+                    </p>
                 </div>
-                <div class="visualization" id="vis1"></div>
             </div>
         </div>
 
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <div class="description">
-                    <h2>A World of Happiness Mapped</h2>
-                    <p>Continue your exploration by delving into a vivid chloropleth map, showcasing global happiness scores. The map unveils fascinating findings, including the regions where happiness reigns supreme. North and South America, Australia, and Europe are among the bright spots, while the map also sheds light on the challenges faced by Africa and other continents.</p>
-                </div>
-                <div class="visualization" id="vis2"></div>
+
+        <!-- end pure grid group -->
+
+        <div class=container-normal>
+            <div class="description description-right">
+                <h2>Gender distribution in the top 5 countries</h2>
+                <p>This graph explores in more detail the differences between countries and genders. As seen before, <span class="countries">USA </span> and <span class="countries"> China</span> are well in front of the other countries.
+                </p>
+                <p>Each 🟦 represents 10 male billionaires.</p>
+                <p>Each 🟧 represents 10 female billionaires.</p>
             </div>
+            <div id=world_happiness_index-3></div>
+
+        </div>
+        <div class=" container-normal">
+            <div class="description description-right">
+                <h2>Billionaire playground</h2>
+                <p>This chart offers a vivid illustration of the industries where billionaires have amassed their fortunes. Three sectors stand out: <span class="industry">Technology </span> , <span class="industry"> Finance & Investments </span> and
+                    <span class="industry">Fashion & Retail</span>. The dominance of the technology industry reflects our era's digital transformation. Simultaneously, the prominence of fashion represents the hold of luxury brands on the world. </p>
+                <p>
+                    Note: This chart is interactive. Move the two sliders to reposition the bubbles.
+                </p>
+            </div>
+            <div id=world_happiness_index-4></div>
+
+        </div>
+        <div class="container-normal">
+            <div class="description description-right">
+                <h2>Where the money came from</h2>
+                <p>This following treemap offers a more granular view of specific companies founded by the billionaires. This offers insight on the diverse avenues which influence global wealth. </p>
+                <p>Play around by selecting a layout and changing the aspect ratio.</p>
+                <p>Click on a block to have a closer look on the respective industry. Click all to view all.</p>
+            </div>
+
+            <div id=world_happiness_index-5></div>
+
         </div>
 
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <div class="description">
-                    <p>As we conclude our journey, we reflect on the enduring pursuit of happiness. It's not just influenced by governments and economic factors; individual choices and the wealth of knowledge available play crucial roles. The quest for happiness transcends borders, and the pursuit of joy is an adventure worth embarking upon.</p>
-                </div>
-            </div>
-        </div>
     </div>
+    <!-- end pure grid group -->
 
-    <script type="text/javascript">
-        vegaEmbed('#vis1', 'js/Score_vs_GDP.vg.json', { "actions": false });
-        vegaEmbed('#vis2', 'js/happiness_map.vg.json', { "actions": false });
-    </script>
+
 </body>
+
+</html>
 
 </html>
